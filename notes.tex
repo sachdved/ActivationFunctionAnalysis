@@ -167,6 +167,21 @@ Here, we see a similar dependence on fourth order moments, but we now have two p
 
 We now imagine the setting with a one dimensional input, a single one dimensional hidden layer, and a one dimensional output.
 
+Then, we can write
+
+\begin{align}
+x_{(2)} = W_{(1)}x_{(1)} + \frac{\alpha}{2} (W_{(1)} x_{(1)})^{2} \\
+\hat{y} = x_{(3)} = W_{(2)}x_{(2)} + \frac{\alpha}{2} (W_{(2)} x_{(2)})^{2} \\
+x_{(3)} = W_{(2)}(W_{(1)}x_{(1)} + \frac{\alpha}{2} (W_{(1)} x_{(1)})^{2}) + \frac{\alpha}{2} (W_{(2)} W_{(1)}x_{(1)} + \frac{\alpha}{2} (W_{(1)} x_{(1)})^{2})^{2}
+\end{align}
+
+
+Simplifying and grouping the last line, we obtain:
+
+\begin{align}
+x^{3} = W_{(2)}W_{(1)}x_{(1)} + \frac{\alpha {W_{(1)}^{2} W_{(2)}}}{2} x_{(1)}^{2} + \frac{\alpha}{2}(W^{2}_{(2)} W^{2}_{(1)} x_{(1)}^{2})) + \frac{\alpha^{2}}{2} W_{(2)} W^{3}_{(1)}
+\end{align}
+
 
 \section*{References}
 
